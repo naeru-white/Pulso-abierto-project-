@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulso Abierto — Cotizaciones de Criptomonedas</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <h1>Pulso Abierto</h1>
+      <p>Plataforma de consulta de información pública de criptomonedas en tiempo real.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search-section">
+      <form id="crypto-form">
+        <label for="consulta-btn">Consulta de Mercado:</label>
+        <button type="submit" id="consulta-btn" class="btn-primary">Consultar Cotizaciones</button>
+      </form>
+    </section>
+
+    <!-- Región de Estados y Resultados -->
+    <section id="status-container" class="status-box initial">
+      💡 Estado inicial: Haz clic en el botón para consultar los precios actuales de Bitcoin, Ethereum y Solana.
+    </section>
+
+    <section id="results-container" class="crypto-grid" aria-live="polite">
+      <!-- Las tarjetas se inyectarán aquí mediante TypeScript -->
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>Fuente de datos: CoinGecko API • Proyecto Pulso Abierto (Actividad 1)</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
